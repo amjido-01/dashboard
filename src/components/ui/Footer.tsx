@@ -2,30 +2,44 @@ import React from 'react'
 import Icon from './Icon'
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
-    <div className="py-12 mx-auto">
-        <div className='flex'>
-            <Icon width={40} height={40} icon="footer" alt='logo' extension='png' />
-            <h4>Atlassian</h4>
+    <footer className="bg-white border-2 border-red-500">
+    <div className=" mx-auto border-2 border-red-500">
+        <div className='flex items-center gap-[12px] mb-[16px]'>
+            <Icon width={35} height={35} icon="footer" alt='logo' extension='png' />
+            <h4 className='text-[18px] font-medium leading-[27px] text-[#4F4F4F]'>Atlassian</h4>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div>
-                <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+        <div className=" flex gap-[48px]">
 
-                <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</a>
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Who We Are</a>
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Our Philosophy</a>
+                <div className="flex flex-col border-2 border-red-500 items-start mt-5 space-y-2">
+                    <div className='mb-[16px]'>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Company size</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>1k - 2k Employees</p>
+                    </div>
+                    <div className='mb-[16px]'>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Sector</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>Information Technology, Infrastructure</p>
+                    </div>
+                    <div>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Founded In</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>2019</p>
+                    </div>
                 </div>
-            </div>
 
             <div>
-                <p className="font-semibold text-gray-800 dark:text-white">Industries</p>
 
-                <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Retail & E-Commerce</a>
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Information Technology</a>
-                    <a href="#" className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Finance & Insurance</a>
+                <div className="flex flex-col border-2 border-red-500 items-start mt-5 space-y-2">
+                    <div className='mb-[16px]'>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Type</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>Private</p>
+                    </div>
+                    <div className='mb-[16px]'>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Funding</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>Bootstrapped</p>
+                    </div>
+                    <div className='mb-[16px] border-2 border-red-500'>
+                        <p className='text-[#6E6D6D] text-[14px] font-medium leading-[18px]'>Founded By</p>
+                        <p className='text-[#3D3D3D] text-[14px] leading-[21px] font-medium mt-[5px]'>Scott Farquhar, Mike Cannon-Brookes</p>
+                    </div>
                 </div>
             </div>
         </div>
