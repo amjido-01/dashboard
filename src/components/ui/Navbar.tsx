@@ -12,24 +12,24 @@ const navLnks = [
         path: "/",
         icon: "briefcase",
         extension: "svg",
-        width: 24,
-        height: 24
+        width: 20,
+        height: 20
     },
     {
         name: "Messages",
         path: "/about",
         icon: "message",
         extension: "svg",
-        width: 24,
-        height: 24
+        width: 20,
+        height: 20
     },
     {
         name: "Payments",
         path: "/services",
         icon: "coinshand",
         extension: "svg",
-        width: 24,
-        height: 24
+        width: 20,
+        height: 20
     }
 ]
 
@@ -42,14 +42,14 @@ const Navbar = () => {
         <div className='mx-auto h-full items-center flex max-w-screen-xl'>
         <div className=" h-[90px] flex items-center justify-between mx-auto py3 px-4 w-full">
         <div>
-       <span className='bg-[#E7E7E7] px-[24px] py-[17px] text-[20px] leading-[27px] font-medium text-[#DC4A2D]'>Logo</span>
+       <span className='bg-[#E7E7E7] px-[24px] py-[17px] text-[18px] leading-[26px] font-medium text-[#DC4A2D]'>Logo</span>
         </div>
     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <div className='flex items-center justify-center gap-[16px]'>   
-        <Icon width={23} height={23} icon="bell" alt="Logo" extension="svg" />
+        <div className='flex items-center justify-center gap-[10px]'>   
+        <Icon width={22} height={22} icon="bell" alt="Logo" extension="svg" />
         <div className='flex items-center justify-center gap-[2px]'>
-        <Icon width={40} height={40} icon="Rectangle" alt="Logo" extension="svg" />
-        <Icon width={20} height={20} icon="chevron" alt="Logo" extension="svg" />
+        <Icon width={35} height={35} icon="Rectangle" alt="Logo" extension="svg" />
+        <Icon width={18} height={18} icon="chevron" alt="Logo" extension="svg" />
 
         </div>
         
@@ -66,7 +66,7 @@ const Navbar = () => {
         <ul className="flex items-center gap-[64px] px-[20px] font-medium border border-gray-100 rounded-lg bg-white md:border-0">
             {navLnks.map((navLnk, index) => (
                 <li key={index}>
-                    <Link href={navLnk.path} className={`flex gap-[8px] items-center text-[20px] leading-[27px] ${pathname === navLnk.path ? 'text-[#FFFFFF] bg-[#DC4A2D] font-medium border-[2px] border-[#FCB4A5] rounded-[49px] p-[16px]' : 'text-[#B0B0B0]'}`}>
+                    <Link href={navLnk.path} className={`flex gap-[8px] items-center text-[18px] leading-[26px] ${pathname === navLnk.path ? 'text-[#FFFFFF] bg-[#DC4A2D] font-medium border-[2px] border-[#FCB4A5] rounded-[49px] p-[16px]' : 'text-[#B0B0B0]'}`}>
                             <Icon width={navLnk.width} height={navLnk.height} icon={navLnk.icon} alt={navLnk.name} extension={navLnk.extension} />
                             <span>{navLnk.name}</span>
                     </Link>
