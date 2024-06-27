@@ -3,7 +3,7 @@ import { Badge } from './badge';
 import Icon from './Icon';
 const JobHeading = () => {
   return (
-    <div>
+    <div className=''>
       <div className="flex flex-row items-center gap-[28px] pt-[36px] ">
         <h1 className="text-[30px] leading-[45px] font-semibold text-[#3D3D3D]">Senior Product Designer</h1>
         <div className="flex flex-row items-center gap-2">

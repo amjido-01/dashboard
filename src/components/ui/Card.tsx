@@ -32,7 +32,7 @@ const Card = () => {
        <div>
           {notifications.map((notification, index) => (
             <React.Fragment key={index}>
-              <div className="mt-[16px] mb-[10px] p-[10px]">
+              <div className="mt-[12px] mb-[10px] p-[10px]">
                 <div className="space-y-1 flex justify-between items-center">
                   <div className='flex gap-[10px] items-center'>
                     <Icon width={16} height={15} icon={notification.icons} alt="location" extension="svg" />

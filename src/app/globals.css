@@ -74,3 +74,15 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #DC4A2D;
+    top: 100%;
+    width: 80px;
+    left: 15%;
+    top: 94%;
+    /* transform: translateX(-50%); */
+  }

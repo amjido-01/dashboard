@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutJob = () => {
   return (
-    <div>
+    <div className=''>
         <h3 className='text-[14px] font-medium leading-[18.9px] text-[#6E6D6D]'>About the Job</h3>
         
 <ol className="text-[#6E6D6D] list-decimal list-inside text-[15px] leading-[28px]">
@@ -46,7 +46,7 @@ const AboutJob = () => {
     <span className='text-[#3D3D3D] text-[16px] font-medium leading-[28px]'>Work location: In person</span>
    </li>
 </ol>
-
+<hr className='mt-[16px] w-full'/>
     </div>
   )
 }
