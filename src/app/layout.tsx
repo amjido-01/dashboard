@@ -13,12 +13,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  applicants,
-  matches
 }: Readonly<{
   children: React.ReactNode;
-  applicants: React.ReactNode;
-  matches: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -27,8 +23,6 @@ export default function RootLayout({
         <Navbar/>
         <Tabs />
         {children}
-        {applicants}
-        {matches}
         </main>
         </body>
     </html>
