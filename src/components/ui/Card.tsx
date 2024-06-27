@@ -16,7 +16,7 @@ const notifications = [
     {
       title: "Messages",
       numbers: 147,
-      icons: "message"
+      icons: "messageTwo"
     },
     {
       title: "Views",

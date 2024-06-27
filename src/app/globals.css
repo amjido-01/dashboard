@@ -75,6 +75,10 @@
     }
   }
 
+  * {
+    min-width: 0;
+  }
+
   .active::after {
     content: "";
     position: absolute;

@@ -5,7 +5,7 @@ const Tabs = () => {
     
 
 <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 mt-[7rem]">
-    <ul className="container flex flex-wrap text-[18px] leading-[25px] font-medium -mb-px">
+    <ul className="px-[1rem] md:container flex flex-wrap text-[18px] leading-[25px] font-medium -mb-px">
     <li className="relative">
             <Link href="/" className="inline-block active p-4 text-[#DC4A2D] border-[#DC4A2D] rounded-t-lg">Jobs Preview</Link>
         </li>

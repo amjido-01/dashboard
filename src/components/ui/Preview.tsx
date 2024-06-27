@@ -23,7 +23,7 @@ const Preview = () => {
     <div className="w-full block md:hidden md:w-[25%] bg-[#FCFCFC] p-[18px] border-l-[1px] border-t-[1px] border-[#E7E7E7]">
       <Aside />           
       </div>
-    <div className='mt-[32px] container'>
+    <div className='mt-[32px] '>
               <Footer />
         </div>
 </div>

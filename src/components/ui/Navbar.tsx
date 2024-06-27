@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Icon from './Icon';
 import { Menu } from 'lucide-react';
-
 const navLnks = [
     {
         name: "Jobs",
@@ -22,7 +21,8 @@ const navLnks = [
         icon: "message",
         extension: "svg",
         width: 20,
-        height: 20
+        height: 20,
+        hasAlert: true
     },
     {
         name: "Payments",
@@ -46,8 +46,11 @@ const Navbar = () => {
        <span className='bg-[#E7E7E7] px-[24px] py-[17px] text-[18px] leading-[26px] font-medium text-[#DC4A2D]'>Logo</span>
         </div>
     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <div className='flex items-center justify-center gap-[10px]'>   
+        <div className='flex items-center justify-center gap-[10px]'>  
+        <div className='relative'>
         <Icon width={22} height={22} icon="bell" alt="Logo" extension="svg" />
+        <span className='h-[6px] w-[6px] rounded-full bg-red-500 absolute -top-[1px] left-[16px]'></span>
+        </div> 
         <div className='flex items-center justify-center gap-[2px]'>
         <Icon width={35} height={35} icon="Rectangle" alt="Logo" extension="svg" />
         <Icon width={18} height={18} icon="chevron" alt="Logo" extension="svg" />
@@ -65,8 +68,10 @@ const Navbar = () => {
         <ul className="flex items-center gap-[64px] font-medium border border-gray-100 rounded-lg bg-white md:border-0">
             {navLnks.map((navLnk, index) => (
                 <li key={index}>
-                    <Link href={navLnk.path} className={`flex gap-[8px] items-center text-[18px] leading-[26px] ${pathname === navLnk.path ? 'text-[#FFFFFF] bg-[#DC4A2D] font-medium border-[2px] border-[#FCB4A5] rounded-[49px] p-[14px]' : 'text-[#B0B0B0]'}`}>
+                    <Link href={navLnk.path} className={`flex relative gap-[8px] items-center text-[18px] leading-[26px] ${pathname === navLnk.path ? 'text-[#FFFFFF] bg-[#DC4A2D] font-medium border-[2px] border-[#FCB4A5] rounded-[49px] p-[14px]' : 'text-[#B0B0B0]'}`}>
+                            
                             <Icon width={navLnk.width} height={navLnk.height} icon={navLnk.icon} alt={navLnk.name} extension={navLnk.extension} />
+                            {navLnk.hasAlert && <span className='h-[6px] w-[6px] rounded-full bg-red-500 absolute top-[2.5px] left-[15px]'></span>}
                             <span>{navLnk.name}</span>
                     </Link>
                 </li>
