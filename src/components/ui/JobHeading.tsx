@@ -4,11 +4,11 @@ import Icon from './Icon';
 const JobHeading = () => {
   return (
     <div className=''>
-      <div className="flex flex-row items-center gap-[28px] pt-[36px] ">
+      <div className="flex flex-row items-center gap-[20px] md:gap-[28px] pt-[36px] ">
         <h1 className="text-[30px] leading-[45px] font-semibold text-[#3D3D3D]">Senior Product Designer</h1>
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-col justify-start items-start md:justify-center md:flex-row md:items-center md:gap-2">
         <p className="text-[#888888] text-[14px] font-medium leading-[18.9px]">Posted 2 days ago</p>
-        <Badge className="text-[#067647] bg-[#ECFDF3] flex gap-[4px]" variant="outline">
+        <Badge className="text-[#067647] px-3 bg-[#ECFDF3] flex gap-[4px]" variant="outline">
           <span className="w-[6px] h-[6px] rounded-full bg-[#17B26A]"></span>
             <p className=" text-[12px] leading-[18px] font-medium">Open</p>
           </Badge>
