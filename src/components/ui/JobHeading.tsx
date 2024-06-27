@@ -4,7 +4,7 @@ import Icon from './Icon';
 const JobHeading = () => {
   return (
     <div>
-      <div className="flex flex-row items-center gap-[28px] p4 ">
+      <div className="flex flex-row items-center gap-[28px] pt-[36px] ">
         <h1 className="text-[30px] leading-[45px] font-semibold text-[#3D3D3D]">Senior Product Designer</h1>
         <div className="flex flex-row items-center gap-2">
         <p className="text-[#888888] text-[14px] font-medium leading-[18.9px]">Posted 2 days ago</p>

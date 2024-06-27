@@ -3,9 +3,10 @@ import { JobTitle } from "@/components/ui/JobTitle";
 import JobHeading from './JobHeading';
 import AboutJob from './AboutJob';
 import Footer from './Footer';
+import Aside from './Aside';
 const JobDescription = () => {
   return (
-    <div className="container flex flex-col md:flex-row gap-4 mt-[36px]"> 
+    <div className="container pr-0 flex flex-col md:flex-row gap-4"> 
     <div className="w-full md:w-[70%]">
         <JobHeading />
         <hr className='mt-[16px]'/>
@@ -13,7 +14,7 @@ const JobDescription = () => {
             <JobTitle />
         </div>
         <hr className='mt-[16px]'/>
-        <div className='mt-[32px]'>
+        <div className='my-[32px]'>
             <AboutJob />
             </div>
             <hr className='mt-[16px]'/>
@@ -21,7 +22,9 @@ const JobDescription = () => {
               <Footer />
             </div>
     </div>
-    <aside className="w-full md:w-[30%] border-2 border-red-500"></aside>
+    <div className="w-full md:w-[30%] bg-[#FCFCFC] p-[24px] border-l-[1px] border-t-[1px] border-[#E7E7E7]">
+      <Aside />           
+      </div>
   </div>
   )
 }
